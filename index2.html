@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Billing</title>
+</head>
+<body>
+    <div class="container1">
+        
+    </div>
+    <div class="container2" id="billpdf">
+        <h1>Billing Panel</h1>
+        <div class="order">
+            <h3>Order Particulars</h3>
+            <div id="taking_order">
+                    <label>Customer Name:</label>
+                    <input type="text" id="name" placeholder="Name">
+                    <label> Date & Time :</label>
+                    <label id="date"></label>
+                </div>   
+            
+                <form id="details">
+                    <select id="invent">
+                    <option disabled hidden selected >Select</option>
+                    </select>
+                    <select id="invent_name">
+                        <option disabled hidden selected>Select</option>
+                    </select>
+                    <input type="text" id="quantity" placeholder="Quantity">
+                    <input type="submit" value="Add Order">
+                </form>
+        </div>
+        <div class="display_order">
+            <div class="items">
+                <div>Sr No</div>
+                <div>Item</div>
+                <div>Name</div>
+                <div>Unit</div>
+                <div>Price Per Unit</div>
+                <div>Quantity</div>
+                <div>GST</div>
+                <div>Total</div>
+            </div>
+            <div class="items_details">
+
+            </div>
+        </div>
+        <div class="calculateBill">
+            <label>Total Amount:</label>
+            <label id="total_amount">-</label>
+            <label >Currency:</label>
+             <label><select id="currency">
+                <option disabled hidden selected>Select</option>
+                <option>INR</option>
+                <option>USD</option>
+                <option>GPB</option>
+                <option>AUD</option>
+                <option>CAD</option>
+                <option>EUR</option>
+                </select>
+            </label>            
+            <label>Final Amount:-</label>
+            <label id="curr">USD</label>
+            <label id="finalbill">-</label>
+            <input type="submit" value="Generate Bill" id="main_submit">
+        
+        </div>
+    </div>
+    <div class="container3">
+
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
